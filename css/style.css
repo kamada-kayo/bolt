@@ -1,0 +1,551 @@
+@charset "UTF-8";
+
+.cf::before,
+.cf::after {
+  display: block;
+  clear: both;
+  content: "";
+}
+
+@media screen and (min-width:767px) {
+.bolt_body {
+  background-color: #f2f2f2;
+  height: 100%;
+}
+
+.bolt_header {
+  position: fixed;
+  width: 100%;
+  background-color: #fff;
+  border-bottom: 1px solid #dcdcdc;
+  padding: 15px 0;
+  z-index: 3;
+}
+
+.bolt_header_wrapper {
+  max-width: 1170px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.bolt_header_logo {
+  float: left;
+}
+
+.fa-bolt {
+  color: #808080;
+}
+
+.bolt_header_btn {
+  float: right;
+  font-size: 12px;
+  padding: 14px 12px;
+  background-color: #74cfae;
+  color: #fff;
+  border: 1px solid #74cfae;
+}
+}
+
+@media screen and (max-width:766px) {
+.bolt_body {
+  background-color: #f2f2f2;
+  height: 100%;
+}
+
+.bolt_header {
+  position: fixed;
+  width: 100%;
+  background-color: #fff;
+  border-bottom: 1px solid #dcdcdc;
+  padding: 15px 0;
+  z-index: 3;
+}
+
+.bolt_header_wrapper {
+  max-width: 766px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.bolt_header_logo {
+  float: left;
+}
+
+.fa-bolt {
+  color: #808080;
+}
+
+.hum_btn_wrapper {
+  display: block;
+  margin-top: 5px;
+  float: right;
+  display: block;
+  position: relative;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  width: 65px;
+  height: 50px;
+}
+
+.hum_btn_wrapper:before {
+  display: block;
+  content: "";
+  top: 50px;
+  width: 40px;
+  height: 22px;
+  background: #ddd;
+  top: 50%;
+  margin-top: 15px;
+  margin-left: 12px;
+}
+
+.hum_btn:before, .hum_btn:after {
+  display: block;
+  content: "";
+  position: absolute;
+  top: 50%;
+  width: 40px;
+  height: 5px;
+  background: #fff;
+  margin-left: 12px;
+}
+
+.hum_btn:before {
+  margin-top: -6px;
+}
+
+.hum_btn:after {
+  margin-top: 3px;
+}
+
+.bolt_header_btn {
+  display: none
+}
+
+.bolt_header_btn.is-open {
+  display: block;
+  margin-top: 37px;
+  margin-left: -570px;
+  background-color: #74cfae;
+  border: none;
+  border-top: solid 5px #fff;
+  border-bottom: solid 10px #fff;
+  width: 766px;
+  height: 50px;
+  text-align: left;
+  color: #fff;
+  padding-left: 10px;
+}
+}
+
+@media screen and (min-width:767px) {
+.main_board {
+  padding: 250px 0;
+  text-align: center;
+}
+
+.main_board_title {
+  font-size: 90px;
+  font-weight: 700;
+  color: #74cfae;
+}
+
+.main_board_desc {
+  margin-top: 20px;
+  font-size: 30px;
+  color: #c0c0c0;
+  font-family: 'Raleway', sans-serif;
+}
+
+.main_companyinfo {
+  background-color: #74cfae;
+  color: #fff;
+}
+}
+
+@media screen and (max-width:766px) {
+.main_board {
+  padding: 95px 0;
+  text-align: center;
+}
+
+.main_board_title {
+  margin: 0 auto;
+  padding-top: 160px;
+  font-size: 90px;
+  font-weight: 700;
+  color: #74cfae;
+  width: 340px;
+}
+
+.main_board_desc {
+  padding-top: 20px;
+  font-size: 30px;
+  color: #c0c0c0;
+  width: 300px;
+  margin: 0 auto;
+  line-height: 35px;
+  font-family: 'Raleway', sans-serif;
+}
+
+.main_companyinfo {
+  background-color: #74cfae;
+  color: #fff;
+}
+}
+
+@media screen and (min-width:1200px) {
+.company_wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.company_left {
+  float: left;
+  margin-left: 70px;
+}
+
+.company_img {
+  margin-top: 50px;
+  vertical-align: bottom;
+}
+
+.company_right {
+  float: right;
+  width: 790px;
+  padding: 65px 0;
+}
+
+.company_ttl {
+  font-size: 24px;
+  text-align: center;
+  font-family: 'Raleway', sans-serif;
+}
+
+.company_desc {
+  font-size: 20px;
+  margin: 35px 0;
+  line-height: 30px;
+  text-align: center;
+}
+}
+
+@media screen and (max-width:1199px) {
+
+.company_wrapper {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.company_left {
+  display: block;
+  max-width: 300px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 50px 0 20px 0;
+}
+
+.company_img {
+  margin: 0 auto;
+}
+
+.company_right {
+  max-width: 790px;
+}
+
+.company_ttl {
+  font-size: 24px;
+  text-align: center;
+  font-family: 'Raleway', sans-serif;
+}
+
+.company_desc {
+  font-size: 20px;
+  margin: 0;
+  padding: 30px 40px 35px;
+  line-height: 30px;
+  text-align: center;
+  color: #fff;
+}
+}
+
+@media screen and (min-width:1200px) {
+.work_ttl {
+  font-size: 24px;
+  text-align: center;
+  padding-top: 60px;
+  padding-bottom: 40px;
+  font-family: 'Raleway', sans-serif;
+  color: #c0c0c0;
+}
+
+.work_img_wrapper {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.work_img_wrapper > li {
+  float: left;
+  opacity: .7;
+}
+
+.work_img_wrapper > li:not(:nth-child(1)):not(:nth-child(4)) {
+  margin-left: 100px;
+}
+
+.work_img_wrapper > li:nth-child(n+4) {
+  margin-top: 80px;
+}
+
+.work_img_wrapper > li:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+
+.work_link {
+  display: block;
+}
+
+.work_desc_wrapper {
+  padding-top: 90px;
+  padding-bottom: 70px;
+  max-width: 870px;
+  margin: 0 auto;
+}
+
+.work_desc {
+  float: left;
+  max-width: 660px;
+  font-size: 20px;
+  font-weight: 200;
+  line-height: 30px;
+  color: #c0c0c0;
+  text-align: center;
+}
+
+.work_btn {
+  float: right;
+  font-size: 12px;
+  font-weight: lighter;
+  max-width: 120px;
+  height: 50px;
+  padding: 14px 20px;
+  border: none;
+  color: #fff;
+  background-color: #74cfae;
+}
+
+.work_btn:hover {
+  cursor: pointer;
+  color:  #333;
+}
+}
+
+@media screen and (max-width:1199px) {
+.work_ttl {
+  font-size: 24px;
+  text-align: center;
+  padding-top: 60px;
+  padding-bottom: 40px;
+  font-family: 'Raleway', sans-serif;
+  color: #c0c0c0;
+}
+
+.work_img_wrapper {
+  max-width: 1100px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.work_img_wrapper > li {
+  opacity: .7;
+}
+
+.work_img_wrapper > li:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+
+.work_link {
+  display: block;
+}
+
+.work_desc_wrapper {
+  padding-top: 90px;
+  padding-bottom: 70px;
+  max-width: 870px;
+  margin: 0 auto;
+}
+
+.work_desc {
+  max-width: 660px;
+  font-size: 20px;
+  font-weight: 200;
+  line-height: 30px;
+  color: #c0c0c0;
+  text-align: center;
+  padding-bottom: 40px;
+}
+
+.work_btn {
+  display: block;
+  font-size: 12px;
+  font-weight: lighter;
+  max-width: 120px;
+  margin: 0 auto;
+  height: 50px;
+  padding: 14px 20px;
+  border: none;
+  color: #fff;
+  background-color: #74cfae;
+}
+
+.work_btn:hover {
+  cursor: pointer;
+  color:  #333;
+}
+}
+
+@media screen and (min-width:1200px) {
+.main_skill {
+  background-color: #4e4e4e;
+}
+
+.skill_ttl {
+  color: #fff;
+  font-size: 24px;
+  text-align: center;
+  padding: 70px 0;
+  font-family: 'Raleway', sans-serif;
+}
+
+.skill_img_wrapper {
+  max-width: 1030px;
+  padding-bottom: 100px;
+  margin: 0 auto;
+}
+
+.skill_img_wrapper > li {
+  float: left;
+}
+
+.skill_img_wrapper > li:not(:first-child) {
+  margin-left: 180px;
+}
+
+.skill_cpt {
+  color: #fff;
+  font-size: 16px;
+  text-align: center;
+  margin-top: 20px;
+}
+}
+
+@media screen and (max-width:1199px) {
+.main_skill {
+  background-color: #4e4e4e;
+}
+
+.skill_ttl {
+  color: #fff;
+  font-size: 24px;
+  text-align: center;
+  padding: 70px 0;
+  font-family: 'Raleway', sans-serif;
+}
+
+.skill_img_wrapper {
+  max-width: 1030px;
+  padding-bottom: 100px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.skill_img_wrapper > li:not(:first-child) {
+  margin-top: 88px;
+}
+
+.skill_cpt {
+  color: #fff;
+  font-size: 16px;
+  text-align: center;
+  margin-top: 20px;
+}
+}
+
+@media screen and (min-width:767px) {
+.main_sns {
+  max-width: 740px;
+  padding: 200px 0;
+  margin: 0 auto;
+}
+
+.main_sns_img {
+  font-size: 0;
+}
+
+.sns_btn {
+  width: 25%;
+  display: inline-block;
+}
+
+.sns_link {
+  display: block;
+  padding: 30px 0;
+  text-align: center;
+}
+
+.sns_link:hover {
+  cursor: pointer;
+  background-color: #fff;
+}
+
+.sns_icon {
+  color: #74cfae;
+  font-size: 50px;
+}
+}
+
+@media screen and (max-width:766px) {
+.main_sns {
+  max-width: 740px;
+  padding: 50px 15px;
+  margin: 0 auto;
+}
+
+.main_sns_img {
+  font-size: 0;
+}
+
+.sns_link {
+  display: block;
+  padding: 30px 0;
+  text-align: center;
+}
+
+.sns_link:hover {
+  cursor: pointer;
+  background-color: #fff;
+}
+
+.sns_icon {
+  color: #74cfae;
+  font-size: 50px;
+}
+}
+
+.bolt_footer {
+  padding: 20px 0 25px 0;
+  background-color: #74cfae;
+}
+
+.footer_wrapper {
+  max-width: 1200px;
+  margin:0 auto;
+  text-align: right;
+}
+
+.bolt_copyw {
+  color: #fff;
+  padding-right: 10px;
+}
