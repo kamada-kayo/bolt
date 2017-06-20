@@ -7,7 +7,6 @@
   content: "";
 }
 
-@media screen and (min-width:767px) {
 .bolt_body {
   background-color: #f2f2f2;
   height: 100%;
@@ -20,11 +19,10 @@
   border-bottom: 1px solid #dcdcdc;
   padding: 15px 0;
   z-index: 3;
+  top: 0;
 }
 
 .bolt_header_wrapper {
-  max-width: 1170px;
-  margin: 0 auto;
   padding: 0 15px;
 }
 
@@ -43,39 +41,12 @@
   background-color: #74cfae;
   color: #fff;
   border: 1px solid #74cfae;
-}
+  text-decoration: none;
 }
 
 @media screen and (max-width:766px) {
-.bolt_body {
-  background-color: #f2f2f2;
-  height: 100%;
-}
-
-.bolt_header {
-  position: fixed;
-  width: 100%;
-  background-color: #fff;
-  border-bottom: 1px solid #dcdcdc;
-  padding: 15px 0;
-  z-index: 3;
-}
-
-.bolt_header_wrapper {
-  max-width: 766px;
-  margin: 0 auto;
-  padding: 0 15px;
-}
-
-.bolt_header_logo {
-  float: left;
-}
-
-.fa-bolt {
-  color: #808080;
-}
-
 .hum_btn_wrapper {
+  position: relative;
   display: block;
   margin-top: 5px;
   float: right;
@@ -123,31 +94,33 @@
 }
 
 .bolt_header_btn.is-open {
+  position: absolute;
   display: block;
-  margin-top: 37px;
-  margin-left: -570px;
+  margin-top: 85px;
   background-color: #74cfae;
   border: none;
   border-top: solid 5px #fff;
   border-bottom: solid 10px #fff;
-  width: 766px;
-  height: 50px;
+  width: 100%;
+  height: 20px;
+  left: 0;
   text-align: left;
+  padding-top: 17px;
   color: #fff;
-  padding-left: 10px;
 }
 }
 
-@media screen and (min-width:767px) {
 .main_board {
   padding: 250px 0;
   text-align: center;
+  margin-top: 95px;
 }
 
-.main_board_title {
+.main_board_ttl {
   font-size: 90px;
   font-weight: 700;
   color: #74cfae;
+  font-family: 'Raleway', sans-serif;
 }
 
 .main_board_desc {
@@ -161,21 +134,22 @@
   background-color: #74cfae;
   color: #fff;
 }
-}
 
 @media screen and (max-width:766px) {
 .main_board {
-  padding: 95px 0;
+  padding: 95px 0 130px;
   text-align: center;
 }
 
-.main_board_title {
+.main_board_ttl {
+  max-width: 300px;
+  line-height: 85px;
   margin: 0 auto;
   padding-top: 160px;
-  font-size: 90px;
+  font-size: 80px;
   font-weight: 700;
   color: #74cfae;
-  width: 340px;
+  font-family: 'Raleway', sans-serif;
 }
 
 .main_board_desc {
@@ -186,11 +160,6 @@
   margin: 0 auto;
   line-height: 35px;
   font-family: 'Raleway', sans-serif;
-}
-
-.main_companyinfo {
-  background-color: #74cfae;
-  color: #fff;
 }
 }
 
@@ -231,7 +200,6 @@
 }
 
 @media screen and (max-width:1199px) {
-
 .company_wrapper {
   width: 100%;
   margin: 0 auto;
@@ -273,8 +241,7 @@
 .work_ttl {
   font-size: 24px;
   text-align: center;
-  padding-top: 60px;
-  padding-bottom: 40px;
+  padding: 60px 0 40px;
   font-family: 'Raleway', sans-serif;
   color: #c0c0c0;
 }
@@ -307,8 +274,7 @@
 }
 
 .work_desc_wrapper {
-  padding-top: 90px;
-  padding-bottom: 70px;
+  padding: 90px 0 70px;
   max-width: 870px;
   margin: 0 auto;
 }
@@ -345,8 +311,7 @@
 .work_ttl {
   font-size: 24px;
   text-align: center;
-  padding-top: 60px;
-  padding-bottom: 40px;
+  padding: 60px 0 40px;
   font-family: 'Raleway', sans-serif;
   color: #c0c0c0;
 }
@@ -361,9 +326,17 @@
   opacity: .7;
 }
 
+.work_img_wrapper > li:nth-child(3) {
+  margin-bottom: 80px;
+}
+
 .work_img_wrapper > li:hover {
   opacity: 1;
   cursor: pointer;
+}
+
+.work_img {
+  vertical-align: bottom;
 }
 
 .work_link {
@@ -371,14 +344,13 @@
 }
 
 .work_desc_wrapper {
-  padding-top: 90px;
-  padding-bottom: 70px;
+  padding: 90px 0 70px;
   max-width: 870px;
   margin: 0 auto;
+  text-align: center;
 }
 
 .work_desc {
-  max-width: 660px;
   font-size: 20px;
   font-weight: 200;
   line-height: 30px;
@@ -406,7 +378,6 @@
 }
 }
 
-@media screen and (min-width:1200px) {
 .main_skill {
   background-color: #4e4e4e;
 }
@@ -430,7 +401,7 @@
 }
 
 .skill_img_wrapper > li:not(:first-child) {
-  margin-left: 180px;
+  margin: 0 0 0 180px;
 }
 
 .skill_cpt {
@@ -439,21 +410,8 @@
   text-align: center;
   margin-top: 20px;
 }
-}
 
 @media screen and (max-width:1199px) {
-.main_skill {
-  background-color: #4e4e4e;
-}
-
-.skill_ttl {
-  color: #fff;
-  font-size: 24px;
-  text-align: center;
-  padding: 70px 0;
-  font-family: 'Raleway', sans-serif;
-}
-
 .skill_img_wrapper {
   max-width: 1030px;
   padding-bottom: 100px;
@@ -461,19 +419,15 @@
   text-align: center;
 }
 
+.skill_img_wrapper > li {
+  float: none;
+}
+
 .skill_img_wrapper > li:not(:first-child) {
-  margin-top: 88px;
-}
-
-.skill_cpt {
-  color: #fff;
-  font-size: 16px;
-  text-align: center;
-  margin-top: 20px;
+  margin: 88px 0 0 0;
 }
 }
 
-@media screen and (min-width:767px) {
 .main_sns {
   max-width: 740px;
   padding: 200px 0;
@@ -484,11 +438,6 @@
   font-size: 0;
 }
 
-.sns_btn {
-  width: 25%;
-  display: inline-block;
-}
-
 .sns_link {
   display: block;
   padding: 30px 0;
@@ -503,6 +452,12 @@
 .sns_icon {
   color: #74cfae;
   font-size: 50px;
+}
+
+@media screen and (min-width:767px) {
+.sns_btn {
+  width: 25%;
+  display: inline-block;
 }
 }
 
@@ -511,26 +466,6 @@
   max-width: 740px;
   padding: 50px 15px;
   margin: 0 auto;
-}
-
-.main_sns_img {
-  font-size: 0;
-}
-
-.sns_link {
-  display: block;
-  padding: 30px 0;
-  text-align: center;
-}
-
-.sns_link:hover {
-  cursor: pointer;
-  background-color: #fff;
-}
-
-.sns_icon {
-  color: #74cfae;
-  font-size: 50px;
 }
 }
 
@@ -541,7 +476,7 @@
 
 .footer_wrapper {
   max-width: 1200px;
-  margin:0 auto;
+  margin: 0 auto;
   text-align: right;
 }
 
